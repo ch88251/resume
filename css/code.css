@@ -1,0 +1,17 @@
+.terminal {
+    font-family: 'Courier New', monospace;
+    border: 1px solid #abb2bf;
+    border-radius: 5px;
+    background-color: #b1c7db;
+    color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(23, 86, 144, 0.5);
+    max-width: 800px;
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+pre {
+    margin: 0;
+}
+

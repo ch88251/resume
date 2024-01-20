@@ -1,0 +1,38 @@
+body {
+  padding-top: 56px;
+}
+.title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.logo {
+    height: 40px;
+}
+.navbar-brand {
+  float: right;
+  display: block;
+}
+.btn-primary:hover {
+  background-color: #53d49f;
+  border: none;
+}
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+  background-color: #21a06b !important;
+  border: none;
+}
+.navbar-dark, .bg-dark {
+  background-color: #274680 !important;
+}
+.home-section-title {
+    margin-top: 30px;
+    font-size: 2em;
+    color: #336699;
+}
+
+th {
+  background-color: #c3c5c7 !important;
+} 
+
+.heading {
+  margin-top: 30px;
+}
