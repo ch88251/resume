@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terminal-like Code Display</title>
+    <link rel="stylesheet" href="css/code.css">
+</head>
+<body>
+    <div class="terminal">
+        <pre><code>
+@startuml
+!include &lt;C4Container&gt;
+ 
+LAYOUT_TOP_DOWN()
+
+Person_Ext(bankCustomer, "Bank Customer")
+System_Boundary(OnlineBankingSystem, "Online Banking System") {
+  Container(webApp, "Web Application", "Java + Spring Boot") {
+    Component_R(webFrontend, "Web Frontend", "Angular")
+    Component_R(apiGateway, "API Gateway", "Spring Cloud")
+  }
+  Container_R(appServer, "Application Server", "Java + Spring Boot")
+  Container_R(database, "Database", "PostgreSQL")
+}
+ 
+Rel_Ext(bankCustomer, webFrontend, "Uses")
+Rel(webFrontend, apiGateway, "Calls REST API")
+Rel(apiGateway, appServer, "Forwards requests to")
+Rel(appServer, database, "Reads from and writes to")
+@enduml
+
+        </code></pre>
+    </div>
+</body>
+</html>
+
